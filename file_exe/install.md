@@ -1,0 +1,1 @@
+letakkan di C:/Tools
