@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuickVid - Pengunduh Video & Audio Cepat</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="container">
+        <header class="header">
+            <h1><span class="q-letter">Q</span>uickVid</h1>
+            <p>Pengunduh Video & Audio Cepat dari Berbagai Sumber</p>
+        </header>
+
+        <form class="download-form" id="download-form">
+            <input type="text" id="video-url" placeholder="Tempelkan link video di sini..." required>
+            <button type="submit" id="process-btn">Proses</button>
+        </form>
+
+        <div id="loader" class="loader hidden"></div>
+
+        <div id="results" class="results-card hidden">
+            <div class="video-info">
+                <img id="video-thumbnail" src="" alt="Video Thumbnail">
+                <h3 id="video-title"></h3>
+            </div>
+            <div class="download-options">
+                <h3>Unduh Video (MP4)</h3>
+                <ul class="download-list" id="video-formats"></ul>
+            </div>
+            <div class="download-options audio">
+                <h3>Konversi ke Audio (MP3)</h3>
+                <ul class="download-list" id="audio-formats"></ul>
+            </div>
+        </div>
+    </div>
+
+    <script type="module" src="js/main.js"></script>
+</body>
+</html>
